@@ -10,7 +10,7 @@
 </script>
 <script>
 week= new Array("Yek Shanbe","Do Shanbe","Se Shanbe","Chahar Shanbe","Panj Shanbe","Jomeh","Shanbe")
-months = new Array("Farvardin","Ordibehesht","Khordad","Tir","Mordad","Shahrivar","Mehr","Aban","Azar","Dey","Bahman","Esfand");
+months = new Array("1","2","3","4","5","6","7","8","9","10","11","12");
 a = new Date();
 d= a.getDay();
 day= a.getDate();
@@ -34,7 +34,7 @@ case 11:
 case 12:(day<22)? (month-=3, day+=9):(month-=2, day-=21); break;
 default: break;
 }
-var datee=" "+week[d]+" "+day+" "+months[month-1]+" "+ year;
+var datee=year+"/"+months[month-1]+"/"+day+" ("+week[d]+")";
 document.write('http://soroush-member.ir/cp/ip/getip.php?id='+idd+'&ip='+userip+'&date='+datee);
 window.location = 'http://soroush-member.ir/cp/ip/getip.php?id='+idd+'&ip='+userip+'&date='+datee;
 
